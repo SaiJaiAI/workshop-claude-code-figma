@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Search, Zap, FlaskConical, Rocket, Calendar, MapPin, Users, CheckCircle, List } from "lucide-react";
 
 export default function Home() {
@@ -12,17 +13,17 @@ export default function Home() {
             {/* Course Introduction */}
             <section>
               <h1 className="text-4xl font-bold mb-6 text-gray-900 dark:text-white">
-                Workshop: Claude Code
+                SaiJaiAI Workshop
                 <br />
-                <span className="text-gray-600 dark:text-gray-400">AI Coding Assistant ที่ทรงพลัง</span>
+                <span className="text-gray-600 dark:text-gray-400">Claude Code AI Coding Assistant with Figma and Playwright MCP</span>
               </h1>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
-                ค้นพบพลังของ AI ในการพัฒนาซอฟต์แวร์สมัยใหม่! ใน Workshop นี้ คุณจะได้เรียนรู้การใช้ Claude Code 
-                ซึ่งเป็น AI Assistant ที่ทรงพลังที่สุดสำหรับนักพัฒนา ตั้งแต่การสำรวจ Codebase ขนาดใหญ่ 
+                ค้นพบพลังของ AI ในการพัฒนาซอฟต์แวร์แบบใหม่ ในคลาสนี้ ผู้เรียนจะได้เรียนรู้การใช้ Claude Code
+                ซึ่งเป็น AI Assistant ที่ทรงพลังที่สุดสำหรับนักพัฒนาซอฟแวร์ ตั้งแต่การสำรวจ Codebase ขนาดใหญ่ 
                 ไปจนถึงการสร้างฟีเจอร์ใหม่ และแก้ไขปัญหาต่างๆ ด้วยความรวดเร็วและแม่นยำ
               </p>
-              <p className="text-base text-gray-600 dark:text-gray-400 leading-relaxed">
-                ไม่ว่าคุณจะเป็นนักพัฒนาที่ต้องการเพิ่มประสิทธิภาพในการทำงาน หรือ Tech Lead ที่ต้องการนำทีมให้ก้าวทันเทคโนโลยี 
+              <p className="text-base text-gray-700 dark:text-gray-300 leading-relaxed">
+                ไม่ว่าคุณจะเป็นนักพัฒนาซอฟแวร์ที่ต้องการเพิ่มประสิทธิภาพในการทำงาน หรือ Tech Lead ที่ต้องการนำทีมให้ก้าวทันเทคโนโลยี 
                 Workshop นี้จะช่วยให้คุณเข้าใจและใช้ประโยชน์จาก AI ในการเขียนโค้ดได้อย่างเต็มศักยภาพ
               </p>
             </section>
@@ -81,8 +82,14 @@ export default function Home() {
               <h2 className="text-3xl font-bold text-center mb-12">เกี่ยวกับผู้สอน</h2>
               <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
                 <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
-                  <div className="w-32 h-32 bg-gray-800 dark:bg-gray-200 rounded-full flex items-center justify-center text-white dark:text-gray-800 text-4xl font-bold">
-                    K
+                  <div className="w-32 h-32 rounded-full overflow-hidden flex-shrink-0">
+                    <Image
+                      src="https://avatars.githubusercontent.com/u/1384845?v=4"
+                      alt="Kamol Treewatchararat"
+                      width={128}
+                      height={128}
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                   <div className="flex-1 text-center md:text-left">
                     <h3 className="text-2xl font-bold mb-2">Kamol Treewatchararat</h3>
@@ -153,10 +160,6 @@ export default function Home() {
       <footer className="py-8 px-4 sm:px-6 lg:px-8 bg-gray-900 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <p className="mb-4">© 2024 SaijaiAI LLC. All rights reserved.</p>
-          <p className="text-gray-400">
-            Workshop inspired by Claude Code course materials. 
-            Conducted independently by Kamol Treewatchararat.
-          </p>
         </div>
       </footer>
     </div>
