@@ -113,7 +113,6 @@ export default function Home() {
           <div className="lg:col-span-1">
             <div className="sticky top-8">
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-lg border border-gray-200 dark:border-gray-700 p-8">
-                <div className="text-sm text-gray-500 dark:text-gray-400 mb-2">Thai Landing Page — Claude Code Workshop</div>
                 <h2 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white">ภาพรวมกิจกรรม</h2>
                 
                 <div className="space-y-4 mb-8">
