@@ -25,7 +25,7 @@ This is a **Next.js 15.5.0** project using the **App Router** architecture with 
   - `layout.tsx` - Root layout with font configuration and metadata
   - `page.tsx` - Homepage component
   - `globals.css` - Global styles with Tailwind imports and CSS variables
-- `docs/` - Static assets (SVG icons)
+- `public/` - Static assets (SVG icons)
 
 ### Key Configuration
 - **TypeScript**: Strict mode, ES2017 target, path aliases (`@/*` → `src/*`)
