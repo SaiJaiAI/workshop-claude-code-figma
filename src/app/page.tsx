@@ -38,7 +38,7 @@ export default function Home() {
     },
     {
       question: "ผู้เข้าร่วมควรมีพื้นฐานอะไรบ้าง?",
-      answer: "ควรมีประสบการณ์ในการพัฒนาโปรแกรมเบื้องต้น เช่น การใช้ Python หรือ JavaScript/TypeScript และควรเข้าใจการใช้งาน Git, CLI และการรันเทสต์อัตโนมัติ เพื่อให้สามารถทำกิจกรรมได้อย่างราบรื่น"
+      answer: "ควรมีประสบการณ์ในการพัฒนาโปรแกรมเบื้องต้น เช่น การใช้ Python หรือ JavaScript/TypeScript และควรเข้าใจการใช้งาน Git, CLI และการรันเทสต์อัตโนมัติ สำหรับส่วน MCP Server Development จะสอนตั้งแต่พื้นฐาน"
     },
     {
       question: "ต้องใช้ภาษาโปรแกรมใด?",
@@ -46,7 +46,7 @@ export default function Home() {
     },
     {
       question: "จะได้รับเนื้อหาอะไรกลับไป?",
-      answer: "ผู้เข้าร่วมจะได้รับเวิร์กบุ๊ก, โค้ดตัวอย่าง, เทมเพลต prompt และแนวทางปฏิบัติที่ดีในการใช้ Claude Code ซึ่งสามารถนำไปปรับใช้และต่อยอดกับทีมงานจริงได้ทันที"
+      answer: "ผู้เข้าร่วมจะได้รับเวิร์กบุ๊ก, โค้ดตัวอย่าง MCP Server, เทมเพลต FastMCP, เทมเพลต prompt และแนวทางปฏิบัติที่ดีในการใช้ Claude Code ซึ่งสามารถนำไปปรับใช้และต่อยอดกับทีมงานจริงได้ทันที"
     },
     {
       question: "ถ้าไม่เคยใช้ Claude Code มาก่อนจะเข้าร่วมได้หรือไม่?",
@@ -62,11 +62,15 @@ export default function Home() {
     },
     {
       question: "เวิร์กช็อปนี้เหมาะสำหรับใคร?",
-      answer: "เหมาะสำหรับวิศวกรซอฟต์แวร์, Tech lead, ผู้พัฒนาผลิตภัณฑ์ และผู้จัดการทีมที่ต้องการยกระดับความเร็วและคุณภาพการพัฒนาโค้ดผ่านการใช้ AI ช่วยอย่างเป็นระบบ"
+      answer: "เหมาะสำหรับวิศวกรซอฟต์แวร์, Tech lead, ผู้พัฒนาผลิตภัณฑ์ และผู้จัดการทีมที่ต้องการยกระดับความเร็วและคุณภาพการพัฒนาโค้ดผ่านการใช้ AI ช่วยอย่างเป็นระบบ และต้องการสร้างเครื่องมือ AI ที่เฉพาะเจาะจงสำหรับองค์กร"
+    },
+    {
+      question: "การสร้าง MCP Server เองมีประโยชน์อย่างไร?",
+      answer: "การสร้าง MCP Server ของตัวเองช่วยให้สามารถเชื่อมต่อ Claude กับระบบภายในองค์กร เช่น Database, API, หรือเครื่องมือที่เฉพาะเจาะจง ทำให้ AI สามารถช่วยงานได้แม่นยำและเหมาะสมกับบริบทขององค์กรมากขึ้น"
     },
     {
       question: "ถ้าต้องการนำความรู้ไปประยุกต์ใช้ในองค์กร ควรทำอย่างไร?",
-      answer: "หลังจากจบเวิร์กช็อป ผู้เรียนจะมีแนวทางการออกแบบเวิร์กโฟลว์และมาตรการ guardrails ที่สามารถนำไปประยุกต์กับการพัฒนาในองค์กร เช่น การสร้างมาตรฐานโค้ดรีวิวและการจัดการความเสี่ยงจากการใช้ AI"
+      answer: "หลังจากจบเวิร์กช็อป ผู้เรียนจะมีแนวทางการออกแบบเวิร์กโฟลว์และมาตรการ guardrails ที่สามารถนำไปประยุกต์กับการพัฒนาในองค์กร เช่น การสร้างมาตรฐานโค้ดรีวิว การจัดการความเสี่ยงจากการใช้ AI และการพัฒนา Custom MCP Tools สำหรับทีม"
     }
   ];
 
@@ -85,19 +89,19 @@ export default function Home() {
               </h1>
               <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed mb-8">
                 เรียนรู้การใช้ Claude Code อย่างเต็มศักยภาพผ่านการลงมือทำจริง ตั้งแต่การเชื่อมต่อ MCP Services
-                เช่น Playwright และ Figma Development Server การแปลง Jupyter Notebook เป็น Streamlit App
-                ไปจนถึงการผสานรวมกับ GitHub Workflow แบบมืออาชีพ
+                เช่น Playwright และ Figma ไปจนถึงการ<strong>สร้าง MCP Server ของตัวเองด้วย FastMCP</strong> การแปลง Jupyter Notebook เป็น Streamlit App
+                และการผสานรวมกับ GitHub Workflow แบบมืออาชีพ
               </p>
               <p className="text-base text-gray-600 dark:text-gray-200 leading-relaxed">
-                Workshop นี้เน้นการปฏิบัติจริง ผู้เรียนจะได้เรียนรู้เทคนิคขั้นสูงอย่าง Plan Mode, Think Hard
-                และการเขียน Test ที่จะช่วยเพิ่มประสิทธิภาพในการพัฒนาซอฟต์แวร์ด้วย AI อย่างมีระบบ
+                Workshop นี้เน้นการปฏิบัติจริง ผู้เรียนจะได้เรียนรู้เทคนิคขั้นสูงอย่าง Plan Mode, Think Hard, Git Worktree
+                การเขียน Test และ<strong>การพัฒนา Custom MCP Tools</strong> ที่จะช่วยเพิ่มประสิทธิภาพในการพัฒนาซอฟต์แวร์ด้วย AI อย่างมีระบบ
               </p>
             </section>
 
             {/* What You'll Learn */}
             <section className="bg-gray-50 dark:bg-gray-900 rounded-2xl p-8">
               <h2 className="text-3xl font-bold text-center mb-12">สิ่งที่คุณจะได้เรียนรู้</h2>
-              <div className="grid md:grid-cols-2 gap-6">
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                   <div className="text-gray-600 dark:text-gray-400 mb-4"><Search size={32} /></div>
                   <h3 className="font-semibold mb-2">MCP Integrations</h3>
@@ -105,18 +109,28 @@ export default function Home() {
                 </div>
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                   <div className="text-gray-600 dark:text-gray-400 mb-4"><Zap size={32} /></div>
+                  <h3 className="font-semibold mb-2">Custom MCP Servers</h3>
+                  <p className="text-gray-600 dark:text-gray-400">สร้าง MCP Server ของตัวเองด้วย FastMCP และ Python</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+                  <div className="text-gray-600 dark:text-gray-400 mb-4"><FlaskConical size={32} /></div>
                   <h3 className="font-semibold mb-2">Notebook to Web App</h3>
                   <p className="text-gray-600 dark:text-gray-400">แปลง Jupyter Notebook เป็น Streamlit App ได้อย่างรวดเร็ว</p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
-                  <div className="text-gray-600 dark:text-gray-400 mb-4"><FlaskConical size={32} /></div>
+                  <div className="text-gray-600 dark:text-gray-400 mb-4"><Search size={32} /></div>
                   <h3 className="font-semibold mb-2">GitHub Integration</h3>
                   <p className="text-gray-600 dark:text-gray-400">ตั้งค่าและทำงานร่วมกับ GitHub ผ่าน Claude Code</p>
                 </div>
                 <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
                   <div className="text-gray-600 dark:text-gray-400 mb-4"><Rocket size={32} /></div>
                   <h3 className="font-semibold mb-2">Advanced Techniques</h3>
-                  <p className="text-gray-600 dark:text-gray-400">Plan Mode, Think Hard และเทคนิคการเขียน Test</p>
+                  <p className="text-gray-600 dark:text-gray-400">Plan Mode, Think Hard, Git Worktree และเทคนิคการเขียน Test</p>
+                </div>
+                <div className="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-sm">
+                  <div className="text-gray-600 dark:text-gray-400 mb-4"><FlaskConical size={32} /></div>
+                  <h3 className="font-semibold mb-2">MCP Architecture</h3>
+                  <p className="text-gray-600 dark:text-gray-400">เข้าใจ Client-Server Architecture และการ Deploy MCP</p>
                 </div>
               </div>
             </section>
@@ -124,33 +138,79 @@ export default function Home() {
             {/* Curriculum */}
             <section>
               <h2 className="text-3xl font-bold text-center mb-12">หลักสูตร</h2>
-              <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
-                <ul className="space-y-4 text-lg">
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-600 dark:text-gray-400">•</span>
-                    <span>การติดตั้ง Claude Code กับ VS Code และเลือก Model ที่เหมาะสม</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-600 dark:text-gray-400">•</span>
-                    <span>เชื่อมต่อ Playwright MCP กับ Claude Code สำหรับการทดสอบ Web</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-600 dark:text-gray-400">•</span>
-                    <span>เชื่อมต่อ Figma MCP เพื่อการพัฒนาจาก Design</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-600 dark:text-gray-400">•</span>
-                    <span>แปลง Jupyter Notebook เป็น Streamlit App ที่ใช้งานได้จริง</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-600 dark:text-gray-400">•</span>
-                    <span>การตั้งค่าและใช้งาน Claude Code กับ GitHub Workflow</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-gray-600 dark:text-gray-400">•</span>
-                    <span>เทคนิคขั้นสูง: Plan Mode, Think Hard และการเขียน Test</span>
-                  </li>
-                </ul>
+              <div className="space-y-8">
+                {/* Part 1: Foundation */}
+                <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-6">Part 1: Claude Code Foundation & MCP Integration</h3>
+                  <ul className="space-y-3 text-base">
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>การติดตั้ง Claude Code กับ VS Code และเลือก Model ที่เหมาะสม</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>เชื่อมต่อ Playwright MCP กับ Claude Code สำหรับการทดสอบ Web</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>เชื่อมต่อ Figma MCP เพื่อการพัฒนาจาก Design</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>ทำความเข้าใจ MCP Architecture และ Client-Server Communication</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Part 2: Building Custom MCP */}
+                <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-6">Part 2: Building Custom MCP Servers</h3>
+                  <ul className="space-y-3 text-base">
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>สร้าง MCP Server แรกด้วย FastMCP และ Python</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>พัฒนา Custom Tools และ Resources สำหรับ Domain-specific Tasks</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>การทดสอบ MCP Server ด้วย MCP Inspector</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>เชื่อมต่อ Custom MCP Server กับ Claude Desktop</span>
+                    </li>
+                  </ul>
+                </div>
+
+                {/* Part 3: Advanced Applications */}
+                <div className="bg-white dark:bg-gray-800 p-8 rounded-lg shadow-sm">
+                  <h3 className="text-xl font-bold mb-6">Part 3: Advanced Applications & Production</h3>
+                  <ul className="space-y-3 text-base">
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>แปลง Jupyter Notebook เป็น Streamlit App ที่ใช้งานได้จริง</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>การตั้งค่าและใช้งาน Claude Code กับ GitHub Workflow</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>ใช้ Git Worktree สำหรับการพัฒนาหลายฟีเจอร์พร้อมกัน</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>Deploy MCP Server ไปยัง Production Environment</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <span className="text-gray-600 dark:text-gray-400">•</span>
+                      <span>เทคนิคขั้นสูง: Plan Mode, Think Hard และการเขียน Test</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </section>
 
