@@ -232,7 +232,7 @@ export default function Home() {
                 </div>
                 
                 <button 
-                  onClick={() => window.open('https://forms.gle/placeholder', '_blank')}
+                  onClick={() => window.open('https://forms.gle/hZyQwwaKVkjTeuYa9', '_blank')}
                   className="w-full bg-gray-900 hover:bg-gray-800 text-white py-3 px-6 rounded-full font-medium transition-colors duration-200"
                 >
                   จองสิทธิใน Waitlist
