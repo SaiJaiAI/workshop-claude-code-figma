@@ -39,10 +39,11 @@ This is a **Next.js 15.5.0** project using the **App Router** architecture with 
 - Path aliases are configured for clean imports (`@/components`, `@/utils`, etc.)
 - Dark/light theme switching is implemented via CSS variables
 - Thai typography optimized with Sarabun font family
-- Configured for GitHub Pages deployment at `saijaiai.github.io/workshop-claude-code-figma`
+- Configured for GitHub Pages deployment with custom domain
 
 ### Deployment
 - **Build Command**: `npm run build` - Creates static export in `/out` directory
 - **Deploy**: Automated via GitHub Actions workflow (`.github/workflows/deploy.yml`)
-- **Target URL**: `saijaiai.github.io/workshop-claude-code-figma`
+- **Target URL**: `learn.saijaiai.com`
+- **Custom Domain**: Configured via CNAME file in `/public/CNAME`
 - Static export configuration enables GitHub Pages hosting
